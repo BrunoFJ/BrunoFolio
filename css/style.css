@@ -218,6 +218,7 @@ body {
   background: linear-gradient(90deg, #145aaa 30%, #39bc8c 100%);
   border-radius: 2px;
   margin: 12px auto 0 auto;
+  margin-bottom: 32px;
 }
 
 .about-container {
@@ -801,4 +802,117 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Responsive Styles */
+
+/* Responsividade geral para o portfólio */
+
+/* Telas grandes (desktop) */
+@media (min-width: 1200px) {
+  .container,
+  .about-container,
+  .skills-cards,
+  .projects-cards,
+  .contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* Tablets e telas médias */
+@media (max-width: 991px) {
+  .nav-links {
+    gap: 24px;
+    font-size: 1.1rem;
+  }
+  .about-container,
+  .skills-cards,
+  .projects-cards,
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .hero {
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+  }
+  .hero-image {
+    margin: 0 auto;
+  }
+}
+
+/* Celulares grandes */
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 10px;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 1rem;
+    justify-content: flex-start;
+  }
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+  .skills-cards,
+  .projects-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .skills-card,
+  .project-card {
+    width: 70%;
+    min-width: unset;
+    max-width: 100%;
+  }
+  .about-expertise {
+    justify-content: center;
+    max-width: 70%;
+  }
+  .contact-container {
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 4px;
+  }
+  .logo {
+    font-size: 1.1rem;
+  }
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+  .hero-content h2 {
+    font-size: 1rem;
+  }
+  .btn,
+  .btn.primary,
+  .btn.secondary {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+  .project-icon video,
+  .project-icon img {
+    width: 100px !important;
+    height: 60px !important;
+  }
+  .photoProfile {
+    width: 90px !important;
+    height: 90px !important;
+  }
 }
