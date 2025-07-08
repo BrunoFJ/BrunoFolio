@@ -509,6 +509,7 @@ body {
   flex-direction: column;
   margin-bottom: 24px;
   overflow: hidden;
+  align-items: stretch;
 }
 
 .project-icon {
