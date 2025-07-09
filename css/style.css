@@ -247,32 +247,6 @@ body {
   line-height: 1.7;
 }
 
-.about-timeline {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -16px;
-  height: 0;
-  display: flex;
-  justify-content: space-between;
-  pointer-events: none;
-}
-
-.about-timeline .dot {
-  width: 20px;
-  height: 20px;
-  background: linear-gradient(90deg, #145aaa 30%, #39bc8c 100%);
-  border-radius: 50%;
-  display: block;
-}
-
-.about-timeline .dot.left {
-  left: -10px;
-}
-.about-timeline .dot.right {
-  right: -10px;
-}
-
 .about-expertise {
   background: #232b47;
   border-radius: 16px;
